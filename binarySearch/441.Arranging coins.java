@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/arranging-coins/
-//TIME COMPLEXITY O(logN)
+// COMPLEXITY O(logN)
 class Solution {
     public int arrangeCoins(int n) {
         int s=0;
@@ -20,7 +20,7 @@ class Solution {
     }
 }
 
-/* FOR THE TIME COMPLEXITY O(1)
+/* COMPLEXITY O(1)
 
 class Solution {
     public int arrangeCoins(int n) {
