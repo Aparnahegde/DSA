@@ -17,7 +17,7 @@ public class Main {
         if (arr[m] < target) {
             return search(arr, target, m + 1, e);
         }
+        return search(arr, target, s,m - 1);
 
-        return search(arr, target, s, m - 1);
     }
 }
