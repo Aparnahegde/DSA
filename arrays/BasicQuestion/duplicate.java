@@ -1,4 +1,4 @@
-TC and SC--O(n)
+TC--O(n2)  SC--O(n)
 
 import java.util.*;
 public class duplicate {
