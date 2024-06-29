@@ -17,3 +17,24 @@ public class Missing_number {
         return arr.length-1;
     }
 }
+
+
+/*USING HASH SET    O(n)-- TC and SC*/
+import java.util.*;
+public class Missing_number{
+    public static void main(String args[]){
+       int[] arr={1,3,4,5,7};
+       findmiss(arr,8);
+    }
+    static void findmiss(int[] arr,int n) {
+        Set<Integer> s = new HashSet<>();
+        for (int i = 1; i <= n; i++) {
+            s.add(i);
+        }
+
+        for (int i = 0; i < arr.length; i++){
+            s.remove(arr[i]);
+        }
+        System.out.println(s);
+    }
+}
