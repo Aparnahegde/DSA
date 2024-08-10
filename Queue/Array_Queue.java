@@ -6,7 +6,7 @@ class Queues{
         this.size=size;
         arr=new int[size];
     }
-    public void enqueue(int data){
+    public void enqueue(int data){//O(1)
         if(r==(size-1)){
             System.out.println("QUEUE FULL");
         }
@@ -23,14 +23,14 @@ class Queues{
         }
     }
 
-    public void dequeue(){
+    public void dequeue(){//O(1)
         if(f==-1&& r==-1){
             System.out.println("Queue empty");
         }else{
             f++;
         }
     }
-    public void display(){
+    public void display(){//O(n)
         for(int i=f;i<=r;i++){
             System.out.print(arr[i]+"\t");
         }
