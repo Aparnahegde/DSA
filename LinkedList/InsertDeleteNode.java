@@ -70,13 +70,12 @@ public void Printlist() {
             head=null;
             return;
         }
-        Node secondLast=head;
-        Node lastNode=head.next;
-        while(lastNode.next!=null){
+        Node lastNode=head;
+        while(lastNode.next.next!=null){
             lastNode=lastNode.next;
-            secondLast=secondLast.next;
+           
         }
-        secondLast.next=null;
+        lastNode.next=null;
     }
 
 
