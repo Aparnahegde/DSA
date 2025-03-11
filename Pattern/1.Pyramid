@@ -1,0 +1,21 @@
+    *
+   ***
+  *****
+ *******
+
+
+for(int i=0;i<N;i++){
+//Empty space
+for(int j=0;j<N-i-1;j++){
+System.out.print(" ");
+}
+//For star
+for(int j=0;j<2*N+1;j++){
+System.out.print("*");
+}
+//Empty space after *
+for(int j=0;j<N-i-1;j++){
+System.out.print(" ");
+}
+System.out.println(" ");
+}
